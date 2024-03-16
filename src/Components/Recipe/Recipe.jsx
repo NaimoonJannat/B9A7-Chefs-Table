@@ -1,6 +1,6 @@
 import { FaFireAlt } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
-const Recipe = ({recipe}) => {
+const Recipe = ({recipe, handleCook}) => {
     const {recipe_name, recipe_image, short_description, preparing_time, calories, ingredients} = recipe;
     return (
         <div>
@@ -11,11 +11,10 @@ const Recipe = ({recipe}) => {
   <div className="card-body text-left">
     <h2 className="card-title">{recipe_name}</h2>
     <p className="text-[#878787] text-base">{short_description}</p>
-    {/* <div className="divider"></div> */}
     <h2 className="text-lg font-semibold">Ingredients: {ingredients.length}</h2>
     <ol className="text-[#878787] text-lg list-disc">
       {
-        ingredients.slice(0, 4).map(ing =><li>{ing}</li>)
+        ingredients.slice(0, 4).map((ing, idx) =><li key={idx}>{ing}</li>)
       }
     </ol>
     <div className="divider"></div>
@@ -30,7 +29,7 @@ const Recipe = ({recipe}) => {
         
     </div>
     <div className="card-actions">
-    <button className="btn rounded-full bg-[#0BE58A] text-black px-6">Want to Cook</button>
+    <button onClick={() => handleCook(recipe)} className="btn rounded-full bg-[#0BE58A] text-black px-6">Want to Cook</button>
     </div>
   </div>
 </div>
