@@ -11,7 +11,7 @@ const Recipies = () => {
     },[])
     return (
         <div className=" lg:w-2/3  p-6 rounded-lg h-[100px] text-center">
-            <h2>Recipes: {recipes.length}</h2>
+            {/* <h2>Recipes: {recipes.length}</h2> */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {
                 recipes.map(recipe =>
