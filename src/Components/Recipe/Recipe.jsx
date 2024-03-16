@@ -1,7 +1,7 @@
 import { FaFireAlt } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
 const Recipe = ({recipe}) => {
-    const {recipe_name, recipe_image, short_description, preparing_time, calories} = recipe;
+    const {recipe_name, recipe_image, short_description, preparing_time, calories, ingredients} = recipe;
     return (
         <div>
             <div className="card border-[#2828281A] bg-base-100 shadow-xl">
@@ -12,7 +12,7 @@ const Recipe = ({recipe}) => {
     <h2 className="card-title">{recipe_name}</h2>
     <p className="text-[#878787] text-base">{short_description}</p>
     <div className="divider"></div>
-    <h2 className="text-lg font-semibold">Ingredients: 5</h2>
+    <h2 className="text-lg font-semibold">Ingredients: {ingredients.length}</h2>
     <ol className="text-[#878787] text-lg list-disc">
         <li>500g ground beef</li>
         <li>500g ground beef</li>
