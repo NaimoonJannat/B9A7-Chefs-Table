@@ -4,16 +4,16 @@ const Recipe = ({recipe}) => {
     const {recipe_name, recipe_image, short_description, preparing_time, calories} = recipe;
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card border-[#2828281A] bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
-    <img src={recipe_image} className="rounded-xl h-60" />
+    <img src={recipe_image} className="lg:h-52 w-full rounded-3xl" />
   </figure>
   <div className="card-body text-left">
     <h2 className="card-title">{recipe_name}</h2>
     <p className="text-[#878787] text-base">{short_description}</p>
     <div className="divider"></div>
     <h2 className="text-lg font-semibold">Ingredients: 5</h2>
-    <ol className="text-[#878787] text-lg">
+    <ol className="text-[#878787] text-lg list-disc">
         <li>500g ground beef</li>
         <li>500g ground beef</li>
         <li>500g ground beef</li>
