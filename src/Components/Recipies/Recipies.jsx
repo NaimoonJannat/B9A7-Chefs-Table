@@ -10,7 +10,7 @@ const Recipies = ({handleCook}) => {
         .then(data => setRecipes(data));
     },[])
     return (
-        <div className=" lg:w-2/3  p-6 rounded-lg h-[100px] text-center">
+        <div className=" lg:w-2/3  lg:p-6 rounded-lg lg:*:h-[100px] text-center">
             {/* <h2>Recipes: {recipes.length}</h2> */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {

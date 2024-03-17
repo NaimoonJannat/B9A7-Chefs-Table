@@ -24,7 +24,7 @@ const Recipe = ({recipe, handleCook}) => {
     return (
         <div>
             <div className="card border-[#2828281A] border-2 rounded-3xl bg-base-100 shadow-xl">
-  <figure className="px-10 pt-10">
+  <figure className="lg:px-10 lg:pt-10">
     <img src={recipe_image} className="lg:h-52 w-full rounded-3xl" />
   </figure>
   <div className="card-body text-left">
