@@ -7,7 +7,7 @@ const CookedItem = ({CookedItem, handlePreparedItem}) => {
     
     <tbody className="text-base text-[#878787]">
       {/* row 1 */}
-      <tr className="bg-[#28282808]">
+      <tr className="bg-[#0be58a19]">
         <td>{recipe_name}</td>
         <td>{preparing_time}</td>
         <td>{calories}</td>

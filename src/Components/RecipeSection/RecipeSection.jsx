@@ -19,7 +19,6 @@ const RecipeSection = () => {
                 <Recipies handleCook={handleCook}></Recipies>
                 <CookSection cook={cook}></CookSection>
             </div>
-            
         </div>
     );
 };
