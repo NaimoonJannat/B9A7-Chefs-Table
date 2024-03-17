@@ -1,8 +1,14 @@
-# React + Vite
+# Recipe Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to our recipe website! Browse through a variety of delicious recipes and start cooking today!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Browse Recipes**: Explore a collection of mouth-watering recipes.
+- **Add to Cooking List**: Add recipes to your cooking list and keep track of what you want to cook.
+- **Preparing Section**: View the recipes currently being prepared.
+- **Total Time and Calories**: See the total time and calories of the recipes being prepared.
+
+## Usage
+
+Visit the website [here](https://chefs-table-922.netlify.app/) to start browsing recipes and cooking!
